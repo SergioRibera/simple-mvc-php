@@ -9,7 +9,7 @@ Este pequeño framework para php utiliza una versión de blade independiente de 
 
 ## Descripción de Carpetas
 
-<img src="https://github.com/SergioRibera/simple-mvc-php/RepoImages(Delete This)/floders.png" />
+![Image Folders](https://github.com/SergioRibera/simple-mvc-php/RepoImages(Delete This)/floders.png)
 
 Todas las configuraciones de la aplicacion php están en el archivo .env, las lineas con un # son ignoradas, para recibir el valor de una configuración se usa Config::get("<config_name>", "<valor_default>");
 
