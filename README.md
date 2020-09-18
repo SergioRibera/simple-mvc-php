@@ -2,16 +2,14 @@
 
 Este pequeño framework para php utiliza una versión de blade independiente de dependencias de laravel para renderizar y trabajar la vista, Para el sistema de enrutamiento utiliza un mini sistema que soporta variables en ruta para facilitar la creación de APIs, por ejemplo
 
-
 ## Librerias Usadas
 
 - BladeOne (Blade Sin Laravel) [Repositorio](https://github.com/EFTEC/BladeOne/wiki)
 - SimplePHPRouter [Repositorio](https://github.com/steampixel/simplePHPRouter)
 
-
 ## Descripción de Carpetas
 
-<img src="/RepoImages(Delete This)/floders.png" />
+<img src="https://github.com/SergioRibera/simple-mvc-php/RepoImages(Delete This)/floders.png" />
 
 Todas las configuraciones de la aplicacion php están en el archivo .env, las lineas con un # son ignoradas, para recibir el valor de una configuración se usa Config::get("<config_name>", "<valor_default>");
 
@@ -20,7 +18,6 @@ Toda la carpeta /App contiene los archivos que el usuario maneja
 Dentro de /App/View estan todas las vistas las cuales deben tener extensión .blade.php (Extension que es modificable desde el archivo index.php linea 9).
 
 Por último la carpeta /App/Controller contiene todos los controladores que el usuario requiera, estos controladores deben (opcioinalmente y para facilitar) heredar de Controller, más información más abajo.
-
 
 ## Clases y Archivos
 
@@ -110,8 +107,6 @@ public function insertClient(){
     $stmt->execute();
 }
 ```
-
-
 
 Cualquier bug o problema porfavor reportar a [contact@sergioribera.com](mailto:contact@sergioribera.com)
 
