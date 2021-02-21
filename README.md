@@ -25,7 +25,7 @@ Por último la carpeta /App/Controller contiene todos los controladores que el u
 
 Este archivo carga y configura todas las rutas y views de la aplicacion al puro estilo de laravel, ej
 
-```
+```php
 <?php
    
      Route::get('/home', function(){
@@ -41,7 +41,7 @@ La clase Route también acepta parametros en url, por ejemplo:
 
 `
 
-```
+```php
 Route::get('/api/(.*)', function ($var1){
     view('api', ['token' => $var1]);
 });
@@ -65,7 +65,7 @@ La función set recibe un parametro y este corresponde a los datos que recibirá
 
 La función `render` renderisa la vista indicad aen el parametro `$view` a la cual se le pasaran los datos que se hayan ido agregando, a continuación un ejemplo de todo lo mencionado anteriormente:
 
-```
+```php
 <?php
 
     class Home extends Controller{
@@ -96,7 +96,7 @@ La función `render` renderisa la vista indicad aen el parametro `$view` a la cu
 
 La clase DB solo tiene una función `getDB` y esta devuelve una instancia de PDO dependiendo de nuestras configuraciones en el archivo .env (A futuro se agregaran mas funciones a esta clase). Un simple, simplisimo uso para esta clase puede ejecutarse de la siguiente manera:
 
-```
+```php
 public function insertClient(){
     $db = DB::getDB();
     $stmt = $db->prepare("INSERT INTO Clientes (nombre, ciudad) VALUES (:nombre, :ciudad)");
@@ -107,7 +107,5 @@ public function insertClient(){
     $stmt->execute();
 }
 ```
-
-Cualquier bug o problema porfavor reportar a [contact@sergioribera.com](mailto:contact@sergioribera.com)
 
 ##### Echo con <3 por [SergioRibera](https://sergioribera.com/)
